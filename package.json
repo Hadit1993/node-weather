@@ -17,7 +17,7 @@
     "postinstall": "tsc",
     "watch-node": "nodemon build/app.js",
     "watch-ts": "tsc -w",
-    "deploy": "git add . && git commit -m Heroku && git push heroku main"
+    "deploy": "git push heroku main"
   },
   "dependencies": {
     "dependencies": "^0.0.1",

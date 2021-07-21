@@ -52,11 +52,13 @@ app.get("/weather", async (req, res) => {
       weather_descriptions = [],
       temperature,
       feelslike,
+      pressure,
+      wind_speed,
     } = await forecast(latitude, longitude);
     res.status(200).json({
       forecast: `${
         weather_descriptions[0] ?? ""
-      }. It is ${temperature} degrees out there and it feels like ${feelslike} degrees.`,
+      }. It is ${temperature} degrees out there and it feels like ${feelslike} degrees. pressure is ${pressure} and wind speed is ${wind_speed}`,
       location,
     });
   } catch (error) {
