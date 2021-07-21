@@ -19,6 +19,7 @@
     "dependencies": "^0.0.1",
     "express": "^4.17.1",
     "hbs": "^4.1.2",
-    "request": "^2.88.2"
+    "request": "^2.88.2",
+    "ts-node": "^10.1.0"
   }
 }
