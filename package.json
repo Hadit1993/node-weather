@@ -13,7 +13,8 @@
   },
   "scripts": {
     "start": "ts-node ./src/app.ts",
-    "dev": "nodemon ./src/app.ts -e js,ts,hbs"
+    "dev": "nodemon ./src/app.ts -e js,ts,hbs",
+    "postinstall": "tsc"
   },
   "dependencies": {
     "dependencies": "^0.0.1",
