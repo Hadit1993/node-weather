@@ -12,10 +12,10 @@
     "typescript": "^4.3.5"
   },
   "scripts": {
-    "start": "node dist/index.js",
+    "start": "node build/app.js",
     "dev": "nodemon ./src/app.ts -e js,ts,hbs",
     "postinstall": "tsc",
-    "watch-node": "nodemon dist/index.js",
+    "watch-node": "nodemon build/app.js",
     "watch-ts": "tsc -w",
     "deploy": "git add . && git commit -m Heroku && git push heroku main"
   },
